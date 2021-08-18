@@ -2,7 +2,8 @@ import Foundation
 
 
 var string1 = "Hello World!"
-string1.contains("Hello")
+string1.contains("Hello") //true
+string1.contains("hello") //false
 
 extension String {
     func ifContainsNoRegister (_ string: String) -> Bool {
@@ -11,4 +12,4 @@ extension String {
 }
 
 
-
+string1.ifContainsNoRegister("hello") //true
